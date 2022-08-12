@@ -1,6 +1,6 @@
 PODS:
   - AdColony (4.8.0)
-  - AppHarbrSDK (1.4.4)
+  - AppHarbrSDK (1.5.0)
   - AppLovinSDK (11.3.0)
   - ChartboostSDK (8.5.0.1)
   - FBAudienceNetwork (6.9.0)
@@ -87,7 +87,7 @@ PODS:
   - VungleSDK-iOS (6.10.6)
 
 DEPENDENCIES:
-  - AppHarbrSDK (= 1.4.4)
+  - AppHarbrSDK (= 1.5.0)
   - Google-Mobile-Ads-SDK (= 9.1.0)
   - GoogleMobileAdsMediationAdColony (= 4.8.0.0)
   - GoogleMobileAdsMediationAppLovin (= 11.3.0.0)
@@ -129,7 +129,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AdColony: eba15b485d1e63d36601d5da4916af73d343b897
-  AppHarbrSDK: 55ed93940bb4b5cab7ce0370824188f9d8393e42
+  AppHarbrSDK: daa2e095c30b029434f31e194833ffa2e4ebc0a0
   AppLovinSDK: df5f0ab4fcad2668ac4563bc3c66c2dddb1099c6
   ChartboostSDK: bc503f96531ca516e9cff73b03910724b6607a1c
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
@@ -154,6 +154,6 @@ SPEC CHECKSUMS:
   UnityAds: 6d2fecf09f314049993b9d1c0fcd2efc43dfa60e
   VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
 
-PODFILE CHECKSUM: 11837b259b0bf89871e31d36456df46ec1109aee
+PODFILE CHECKSUM: 69888cddae2b478d3465f7597d67fb16f9a81f0d
 
 COCOAPODS: 1.11.3

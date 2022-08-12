@@ -65,11 +65,6 @@ class InterstitialViewController: UIViewController, GADFullScreenContentDelegate
     }
     
     fileprivate func loadInterstitial() {
-        
-        // MARK: AppHarbr
-        // In order to avoid memory leak, the publisher should remove the Interstitial monitoring instance once the ad is closed using removeInterstitial method.
-        AH.removeInterstitial(ad: interstitial)
-        
         let request = GADRequest()
         GADInterstitialAd.load(
             withAdUnitID: Constants.adMobInterstitialAdUnitID, request: request
@@ -158,8 +153,6 @@ class InterstitialViewController: UIViewController, GADFullScreenContentDelegate
     
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error)
     {
-        // MARK: AppHarbr
-        AH.removeInterstitial(ad: interstitial)
         print("Ad failed to present full screen content with error \(error.localizedDescription).")
     }
     
@@ -167,11 +160,7 @@ class InterstitialViewController: UIViewController, GADFullScreenContentDelegate
         print("Ad did dismiss full screen content.")
     }
     
-    deinit {
-        
-        // MARK: AppHarbr
-        AH.removeInterstitial(ad: interstitial)
-        
+    deinit {        
         NotificationCenter.default.removeObserver(
             self,
             name: UIApplication.didEnterBackgroundNotification, object: nil)

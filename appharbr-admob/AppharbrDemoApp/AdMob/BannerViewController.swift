@@ -25,13 +25,6 @@ class BannerViewController: UIViewController {
         
         bannerView.load(GADRequest())
     }
-
-    deinit {
-        // MARK: AppHarbr
-        // In order to prevent memory leaks, you should call removeBanner(ofView:) before the system deallocates any object that addBanner(with:adObject:geBannerEvents:) specifies.
-
-        AH.removeBanner(view: bannerView)
-    }
     
 }
 

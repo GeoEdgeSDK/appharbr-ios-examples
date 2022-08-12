@@ -54,11 +54,6 @@ class RewardedViewController: UIViewController, GADFullScreenContentDelegate {
     
     
     fileprivate func startNewGame() {
-        
-        // MARK: AppHarbr
-        // In order to avoid memory leak, the publisher should remove the Rewarded monitoring instance once the ad is closed using removeRewarded method.
-        AH.removeRewarded(ad: self.rewardedAd)
-        
         gameState = .playing
         counter = gameLength
         playAgainButton.isHidden = true
@@ -171,9 +166,6 @@ class RewardedViewController: UIViewController, GADFullScreenContentDelegate {
         _ ad: GADFullScreenPresentingAd,
         didFailToPresentFullScreenContentWithError error: Error
     ) {
-        // MARK: AppHarbr
-        // In order to avoid memory leak, the publisher should remove the Rewarded monitoring instance once the ad is closed using removeRewarded method.
-        AH.removeRewarded(ad: self.rewardedAd)
         print("Rewarded ad failed to present with error: \(error.localizedDescription).")
         let alert = UIAlertController(
             title: "Rewarded ad failed to present",
@@ -190,11 +182,6 @@ class RewardedViewController: UIViewController, GADFullScreenContentDelegate {
     }
     
     deinit {
-        
-        // MARK: AppHarbr
-        // In order to avoid memory leak, the publisher should remove the Rewarded monitoring instance once the ad is closed using removeRewarded method.
-        AH.removeRewarded(ad: self.rewardedAd)
-        
         NotificationCenter.default.removeObserver(
             self,
             name: UIApplication.didEnterBackgroundNotification, object: nil)
