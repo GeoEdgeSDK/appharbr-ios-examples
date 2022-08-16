@@ -30,6 +30,7 @@ class InterstitialViewController: UIViewController {
     
     @IBAction func showAd(_ sender: AnyObject) {
         // MARK: AppHarbr
+        // Before displaying, check the ad state
         if AH.getInterstitialState(ad: interstitialAd) != .blocked {
             interstitialAd.show()
         } else {

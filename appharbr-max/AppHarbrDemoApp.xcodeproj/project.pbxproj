@@ -50,7 +50,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C884B9227A25DE900044C44 /* AdMob */ = {
+		0C884B9227A25DE900044C44 /* MAX */ = {
 			isa = PBXGroup;
 			children = (
 				0C884B8627A2558100044C44 /* BannerViewController.swift */,
@@ -58,7 +58,7 @@
 				0C884B8A27A25A4F00044C44 /* RewardedViewController.swift */,
 				0C884B8C27A25C0200044C44 /* NativeViewController.swift */,
 			);
-			path = AdMob;
+			path = MAX;
 			sourceTree = "<group>";
 		};
 		0CEB589627A01C1900F9D932 = {
@@ -85,7 +85,7 @@
 				0CEB58A227A01C1900F9D932 /* AppDelegate.swift */,
 				0CEB58A627A01C1900F9D932 /* ViewController.swift */,
 				0CEE643927A2EB8F00FD1E38 /* Constants.swift */,
-				0C884B9227A25DE900044C44 /* AdMob */,
+				0C884B9227A25DE900044C44 /* MAX */,
 				0CEB58A827A01C1900F9D932 /* Main.storyboard */,
 				0CEB58AB27A01C1B00F9D932 /* Assets.xcassets */,
 				0CEB58AD27A01C1B00F9D932 /* LaunchScreen.storyboard */,

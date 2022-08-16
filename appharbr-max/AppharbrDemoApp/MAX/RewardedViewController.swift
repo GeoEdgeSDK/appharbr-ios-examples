@@ -28,6 +28,8 @@ class RewardedViewController: UIViewController {
 
     
     @IBAction func showAd(_ sender: AnyObject) {
+        // MARK: AppHarbr
+        // Before displaying, check the ad state
         if AH.getRewardedState(ad: rewardedAd) != .blocked {
             rewardedAd.show()
         } else {
