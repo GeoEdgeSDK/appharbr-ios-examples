@@ -21,6 +21,6 @@ target 'AppHarbrDemoApp' do
   pod 'AppLovinMediationIronSourceAdapter'
 
   #AppHarbr SDK
-  pod 'AppHarbrSDK', '1.5.0'
+  pod 'AppHarbrSDK', '1.5.5'
 
 end

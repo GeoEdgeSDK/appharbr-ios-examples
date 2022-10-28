@@ -82,7 +82,7 @@ extension NativeViewController: GADNativeAdLoaderDelegate {
     func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
         
         // MARK: AppHarbr
-        let adResult = AH.shouldBlock(nativeAd: nativeAd, using: .adMob)
+        let adResult = AH.shouldBlock(nativeAd: nativeAd, using: .adMob, unitId: Constants.adMobNativeAdUnitID)
         if adResult.adStateResult == .blocked {
             print("AppHarbr : Ad Blocked")
             return // Might call to reload
