@@ -6,21 +6,21 @@ target 'AppHarbrDemoApp' do
   use_frameworks!
 
   # Pods for AppHarbrDemoApp
-  pod 'Google-Mobile-Ads-SDK', '9.1.0'
+  pod 'Google-Mobile-Ads-SDK'
 
   #AdMob Adapter
 
-  pod 'GoogleMobileAdsMediationUnity', '4.0.1.0'
-  pod 'GoogleMobileAdsMediationFyber', '8.1.3.1'
-  pod 'GoogleMobileAdsMediationInMobi', '10.0.2.1'
-  pod 'GoogleMobileAdsMediationChartboost', '8.5.0.2'
-  pod 'GoogleMobileAdsMediationFacebook', '6.9.0.1'
-  pod 'GoogleMobileAdsMediationAppLovin', '11.3.0.0'
+  pod 'GoogleMobileAdsMediationUnity'
+  pod 'GoogleMobileAdsMediationFyber'
+  pod 'GoogleMobileAdsMediationInMobi'
+  pod 'GoogleMobileAdsMediationChartboost'
+  pod 'GoogleMobileAdsMediationFacebook'
+  pod 'GoogleMobileAdsMediationAppLovin'
   pod 'GoogleMobileAdsMediationIronSource'
-  pod 'GoogleMobileAdsMediationVungle', '6.10.6.1'
-  pod 'GoogleMobileAdsMediationAdColony', '4.8.0.0'
+  pod 'GoogleMobileAdsMediationVungle'
+  pod 'GoogleMobileAdsMediationAdColony'
 
   #AppHarbr SDK
-  pod 'AppHarbrSDK', '1.5.5'
+  pod 'AppHarbrSDK'
 
 end
