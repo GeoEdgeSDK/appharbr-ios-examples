@@ -1,0 +1,64 @@
+PODS:
+  - AppHarbrSDK (1.16.0)
+  - AppLovinSDK (12.6.0)
+  - ChartboostSDK (9.7.0)
+  - Fyber_Marketplace_SDK (8.3.1)
+  - Google-Mobile-Ads-SDK (11.7.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (2.5.0)
+  - IronSourceAdMobAdapter (4.3.56.1):
+    - Google-Mobile-Ads-SDK (= 11.7.0)
+    - IronSourceSDK (= 8.3.0.0)
+  - IronSourceAdQualitySDK (7.20.5)
+  - IronSourceAppLovinAdapter (4.3.47.3):
+    - AppLovinSDK (= 12.6.0)
+    - IronSourceSDK (= 8.3.0.0)
+  - IronSourceChartboostAdapter (4.3.19.2):
+    - ChartboostSDK (= 9.7.0)
+    - IronSourceSDK (= 8.3.0.0)
+  - IronSourceFyberAdapter (4.3.36.2):
+    - Fyber_Marketplace_SDK (= 8.3.1)
+    - IronSourceSDK (= 8.3.0.0)
+  - IronSourceSDK (8.3.0.0)
+
+DEPENDENCIES:
+  - AppHarbrSDK
+  - IronSourceAdMobAdapter (= 4.3.56.1)
+  - IronSourceAdQualitySDK (= 7.20.5)
+  - IronSourceAppLovinAdapter (= 4.3.47.3)
+  - IronSourceChartboostAdapter (= 4.3.19.2)
+  - IronSourceFyberAdapter (= 4.3.36.2)
+  - IronSourceSDK (= 8.3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - AppHarbrSDK
+    - AppLovinSDK
+    - ChartboostSDK
+    - Fyber_Marketplace_SDK
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
+    - IronSourceAdMobAdapter
+    - IronSourceAdQualitySDK
+    - IronSourceAppLovinAdapter
+    - IronSourceChartboostAdapter
+    - IronSourceFyberAdapter
+    - IronSourceSDK
+
+SPEC CHECKSUMS:
+  AppHarbrSDK: 012cd43050b74395776099c6f6eb19c65a835938
+  AppLovinSDK: 76c1f378b8492110a197c288ea4907930d703829
+  ChartboostSDK: 0cd093c90a5a21c89783fe5be486e511fb2dbfc8
+  Fyber_Marketplace_SDK: 23285d363d7a56d77e97a9699685885069deb3f7
+  Google-Mobile-Ads-SDK: 204b517c9765169144cf39763c7f5d23c57a9db0
+  GoogleUserMessagingPlatform: 6b4f48a370e77ce121d034c908cc6ee4fdafaf13
+  IronSourceAdMobAdapter: 00216a99843fc4667f227e60a10010c0f6d33b01
+  IronSourceAdQualitySDK: 63be3dc494ae5052ecd6e7bac7317f0a538ca091
+  IronSourceAppLovinAdapter: 1e380b4717bdcf5519ec56ade6d772e04bdb023b
+  IronSourceChartboostAdapter: 40cfa7d8c4a92a847f3864d74fd5dbbb55757ab9
+  IronSourceFyberAdapter: 3865cb383c3eaaf2c7d9b17defbb3aa5cea21b00
+  IronSourceSDK: 2dbbc8b9d20cbc4a60901e07e0aa5f3bf6a15d9a
+
+PODFILE CHECKSUM: 6a140bf77171e40a586ce6007145606e3130e1b6
+
+COCOAPODS: 1.15.2
