@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AppHarbrDemoApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppHarbrDemoApp
+  pod 'IronSourceSDK','8.3.0.0'
+  pod 'IronSourceAdQualitySDK','7.20.5'
+
+  #Levelplay Adapter
+  pod 'IronSourceAppLovinAdapter','4.3.47.3'
+  pod 'IronSourceChartboostAdapter','4.3.19.2'
+  pod 'IronSourceFyberAdapter','4.3.36.2'
+  pod 'IronSourceAdMobAdapter','4.3.56.1'
+
+  #AppHarbr SDK
+  pod 'AppHarbrSDK'
+
+end
