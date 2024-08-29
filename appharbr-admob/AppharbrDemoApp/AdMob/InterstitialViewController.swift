@@ -128,7 +128,7 @@ class InterstitialViewController: UIViewController, GADFullScreenContentDelegate
             handler: { [weak self] action in
                 if let ad = self?.interstitial {
                     // MARK: AppHarbr
-                    if AH.getInterstitialState(ad: ad) != .blocked {
+                    if AH.interstitialResult(forAd: ad).adStateResult != .blocked {
                         print("AppHarbr Permit display")
                         ad.present(fromRootViewController: self!)
                     } else {
@@ -176,5 +176,12 @@ extension InterstitialViewController: AppHarbrDelegate {
     // MARK: AppHarbr AppHarbrDelegate
     func didAdBlocked(ad: NSObject?, unitId: String?, adForamt: AdFormat, reasons: [String]) {
         print("AppHarbr : Ad Blocked")
+    }
+}
+
+extension InterstitialViewController: AppHarbrAdAnalyzeDelegate {
+    
+    func didAdAnalyzed(ad: NSObject?, adNetwork: AdSdk, unitId: String?, adFormat: AdFormat, result: AdAnalyzedResult) {
+        print("Output from ad network \(adNetwork.rawValue), ad unit id: \(unitId ?? ""), with ad result: \(result.description)")
     }
 }

@@ -14,10 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // MARK: AppHarbr
         // Initialize AppHarbr SDK
-
+        
         let configuration = AppHarbrConfigurationBuilder(apiKey: Constants.geoEdgeKey)
-//                                .withDebugConfig(AppHarbrSdkDebug(debug: true, blockAll: true))
-//                                .withAllowedNetworksToMonitor([.adMob])
+        //            .withDebugConfig(AppHarbrSdkDebug(debug: true, blockAll: true))
+        //            .withTargetedNetworks([.max])
+        //            .withMuteAd(true)
+        //            .withInterstitialAdTimeLimit(30)
+        //            .withRewardedAdTimeLimit(30)
                                 .build()
 
         AH.initializeSdk(configuration: configuration) { error in
