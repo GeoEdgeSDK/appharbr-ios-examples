@@ -9,6 +9,7 @@ import Foundation
 // GADApplicationIdentifier from AdMob demo app
 enum Constants {
     static let geoEdgeKey = "YOUR_KEY"
+    static let appLovinSdkKey = "YOUR_APP_LOVIN_SDK_KEY"
 
     static let bannerAdUnitID = "YOUR_AD_UNIT_ID"
     static let interstitialAdUnitID = "YOUR_AD_UNIT_ID"

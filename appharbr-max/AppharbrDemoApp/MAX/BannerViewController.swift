@@ -53,6 +53,12 @@ extension BannerViewController: AppHarbrDelegate {
     }
 }
 
+extension BannerViewController: AppHarbrAdAnalyzeDelegate {
+    func didAdAnalyzed(ad: NSObject?, adNetwork: AdSdk, unitId: String?, adFormat: AdFormat, result: AdAnalyzedResult) {
+        print("Output from ad network \(adNetwork.rawValue), ad unit id: \(unitId ?? ""), with ad result: \(result.description)")
+    }
+}
+
 extension BannerViewController: MAAdViewAdDelegate {
     func didLoad(_ ad: MAAd) { }
 

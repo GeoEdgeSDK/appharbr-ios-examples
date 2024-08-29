@@ -30,7 +30,7 @@ class RewardedViewController: UIViewController {
     @IBAction func showAd(_ sender: AnyObject) {
         // MARK: AppHarbr
         // Before displaying, check the ad state
-        if AH.getRewardedState(ad: rewardedAd) != .blocked {
+        if AH.rewardedResult(forAd: rewardedAd).adStateResult != .blocked {
             rewardedAd.show()
         } else {
             print("Do Not Display - AppHarbr Blocked Interstitial Ad")
@@ -43,6 +43,12 @@ extension RewardedViewController: AppHarbrDelegate {
     // MARK: AppHarbr AppHarbrDelegate
     func didAdBlocked(ad: NSObject?, unitId: String?, adForamt: AdFormat, reasons: [String]) {
         print("AppHarbr : Ad Blocked")
+    }
+}
+
+extension RewardedViewController: AppHarbrAdAnalyzeDelegate {
+    func didAdAnalyzed(ad: NSObject?, adNetwork: AdSdk, unitId: String?, adFormat: AdFormat, result: AdAnalyzedResult) {
+        print("Output from ad network \(adNetwork.rawValue), ad unit id: \(unitId ?? ""), with ad result \(result.description)")
     }
 }
 

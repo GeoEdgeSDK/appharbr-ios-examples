@@ -52,7 +52,7 @@ extension NativeViewController: MANativeAdDelegate
     func didLoadNativeAd(_ maxNativeAdView: MANativeAdView?, for ad: MAAd) {
         // MARK: AppHarbr
         // Before displaying, check the ad state
-        let adResult = AH.shouldBlock(nativeAd: ad, using: .max)
+        let adResult = AH.shouldBlock(nativeAd: ad, using: .max, unitId: ad.adUnitIdentifier)
         if adResult.adStateResult == .blocked {
             print("AppHarbr : Ad Blocked")
             return // Might call to reload
