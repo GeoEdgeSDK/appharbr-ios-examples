@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize AppHarbr SDK
 
         let configuration = AppHarbrConfigurationBuilder(apiKey: Constants.geoEdgeKey)
-//                                .withDebugConfig(AppHarbrSdkDebug(debug: true, blockAll: true))
-//                                .withAllowedNetworksToMonitor([.adMob])
-                                .build()
+//            .withDebugConfig(AppHarbrSdkDebug(debug: true, blockAll: true))
+//            .withTargetedNetworks([.max])
+//            .withMuteAd(true)
+//            .withInterstitialAdTimeLimit(30)
+//            .withRewardedAdTimeLimit(30)
+            .build()
 
         AH.initializeSdk(configuration: configuration) { error in
             if let error = error {
@@ -28,12 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             print("AppHarbr initialized successfully!")
         }
-
+        
         // Initialize the AppLovin SDK
-        ALSdk.shared()!.mediationProvider = ALMediationProviderMAX
-        ALSdk.shared()!.initializeSdk(completionHandler: { configuration in
-            // AppLovin SDK is initialized, start loading ads now or later if ad gate is reached
-        })
+        let initConfig = ALSdkInitializationConfiguration(sdkKey: Constants.appLovinSdkKey) { builder in
+            builder.mediationProvider = ALMediationProviderMAX
+        }
+        
+        ALSdk.shared().initialize(with: initConfig) { sdkConfig in
+            print("AppLovin initialized successfully!")
+        }
+        
         return true
     }
 

@@ -17,11 +17,10 @@
 		0CEB58AC27A01C1B00F9D932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEB58AB27A01C1B00F9D932 /* Assets.xcassets */; };
 		0CEB58AF27A01C1B00F9D932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEB58AD27A01C1B00F9D932 /* LaunchScreen.storyboard */; };
 		0CEE643A27A2EB8F00FD1E38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE643927A2EB8F00FD1E38 /* Constants.swift */; };
-		0EB81B3F7769388EB5E94292 /* Pods_AppHarbrDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C067F976502A3656D710188 /* Pods_AppHarbrDemoApp.framework */; };
+		0EEE0571569C35CB0C7D737D /* Pods_AppHarbrDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2917C452D2E77201A8C2F86 /* Pods_AppHarbrDemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08819857F7F87E6E64E01D95 /* Pods-AppHarbrDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHarbrDemoApp.release.xcconfig"; path = "Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		0C884B8627A2558100044C44 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		0C884B8827A2590D00044C44 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		0C884B8A27A25A4F00044C44 /* RewardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +33,9 @@
 		0CEB58AE27A01C1B00F9D932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CEB58B027A01C1B00F9D932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CEE643927A2EB8F00FD1E38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		6C067F976502A3656D710188 /* Pods_AppHarbrDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppHarbrDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDB5EB52DA5F09E09A651221 /* Pods-AppHarbrDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHarbrDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3963590B1712ED7F6D9C4F04 /* Pods-AppHarbrDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHarbrDemoApp.release.xcconfig"; path = "Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		8DCFABC1ACCFCC664D83AF39 /* Pods-AppHarbrDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHarbrDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F2917C452D2E77201A8C2F86 /* Pods_AppHarbrDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppHarbrDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB81B3F7769388EB5E94292 /* Pods_AppHarbrDemoApp.framework in Frameworks */,
+				0EEE0571569C35CB0C7D737D /* Pods_AppHarbrDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 				0CEB58A127A01C1900F9D932 /* AppharbrDemoApp */,
 				0CEB58A027A01C1900F9D932 /* Products */,
 				610ED516FCF970ADCBC52F82 /* Pods */,
-				6931533A38D8CC7FF75880AC /* Frameworks */,
+				827B5BDD784D65F92B92A75E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,16 +97,16 @@
 		610ED516FCF970ADCBC52F82 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EDB5EB52DA5F09E09A651221 /* Pods-AppHarbrDemoApp.debug.xcconfig */,
-				08819857F7F87E6E64E01D95 /* Pods-AppHarbrDemoApp.release.xcconfig */,
+				8DCFABC1ACCFCC664D83AF39 /* Pods-AppHarbrDemoApp.debug.xcconfig */,
+				3963590B1712ED7F6D9C4F04 /* Pods-AppHarbrDemoApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6931533A38D8CC7FF75880AC /* Frameworks */ = {
+		827B5BDD784D65F92B92A75E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6C067F976502A3656D710188 /* Pods_AppHarbrDemoApp.framework */,
+				F2917C452D2E77201A8C2F86 /* Pods_AppHarbrDemoApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,12 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CEB58B327A01C1B00F9D932 /* Build configuration list for PBXNativeTarget "AppHarbrDemoApp" */;
 			buildPhases = (
-				31B0A0A49663B05C5F0EFB70 /* [CP] Check Pods Manifest.lock */,
+				8F380F6D533B06AE04DB8987 /* [CP] Check Pods Manifest.lock */,
 				0CEB589B27A01C1900F9D932 /* Sources */,
 				0CEB589C27A01C1900F9D932 /* Frameworks */,
 				0CEB589D27A01C1900F9D932 /* Resources */,
-				29D755789A53202492028AF4 /* [CP] Embed Pods Frameworks */,
-				B936053B5D1BE681A92B294F /* [CP] Copy Pods Resources */,
+				4646E70E1452366D1CDB0CD9 /* [CP] Embed Pods Frameworks */,
+				2930D5487F047265C2C7DD17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,7 +181,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29D755789A53202492028AF4 /* [CP] Embed Pods Frameworks */ = {
+		2930D5487F047265C2C7DD17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4646E70E1452366D1CDB0CD9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,7 +215,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		31B0A0A49663B05C5F0EFB70 /* [CP] Check Pods Manifest.lock */ = {
+		8F380F6D533B06AE04DB8987 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,23 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B936053B5D1BE681A92B294F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppHarbrDemoApp/Pods-AppHarbrDemoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,7 +394,7 @@
 		};
 		0CEB58B427A01C1B00F9D932 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB5EB52DA5F09E09A651221 /* Pods-AppHarbrDemoApp.debug.xcconfig */;
+			baseConfigurationReference = 8DCFABC1ACCFCC664D83AF39 /* Pods-AppHarbrDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,7 +424,7 @@
 		};
 		0CEB58B527A01C1B00F9D932 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08819857F7F87E6E64E01D95 /* Pods-AppHarbrDemoApp.release.xcconfig */;
+			baseConfigurationReference = 3963590B1712ED7F6D9C4F04 /* Pods-AppHarbrDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

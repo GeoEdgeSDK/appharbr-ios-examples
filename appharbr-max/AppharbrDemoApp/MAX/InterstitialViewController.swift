@@ -31,7 +31,7 @@ class InterstitialViewController: UIViewController {
     @IBAction func showAd(_ sender: AnyObject) {
         // MARK: AppHarbr
         // Before displaying, check the ad state
-        if AH.getInterstitialState(ad: interstitialAd) != .blocked {
+        if AH.interstitialResult(forAd: interstitialAd).adStateResult != .blocked {
             interstitialAd.show()
         } else {
             print("Do Not Display - AppHarbr Blocked Interstitial Ad")
@@ -45,6 +45,12 @@ extension InterstitialViewController: AppHarbrDelegate {
     // MARK: AppHarbr AppHarbrDelegate
     func didAdBlocked(ad: NSObject?, unitId: String?, adForamt: AdFormat, reasons: [String]) {
         print("AppHarbr : Ad Blocked")
+    }
+}
+
+extension InterstitialViewController: AppHarbrAdAnalyzeDelegate {
+    func didAdAnalyzed(ad: NSObject?, adNetwork: AdSdk, unitId: String?, adFormat: AdFormat, result: AdAnalyzedResult) {
+        print("Output from ad network \(adNetwork.rawValue), ad unit id: \(unitId ?? ""), with ad result \(result.description)")
     }
 }
 
