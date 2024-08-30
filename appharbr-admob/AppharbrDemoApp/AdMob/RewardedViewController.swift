@@ -128,7 +128,7 @@ class RewardedViewController: UIViewController, GADFullScreenContentDelegate {
     @IBAction func playAgain(_ sender: AnyObject) {
         if let ad = rewardedAd {
             // MARK: AppHarbr
-            if AH.getRewardedState(ad: ad) != .blocked {
+            if AH.rewardedResult(forAd: ad).adStateResult != .blocked {
                 ad.present(fromRootViewController: self) {
                     let reward = ad.adReward
                     print("Reward received with currency \(reward.amount), amount \(reward.amount.doubleValue)")
@@ -196,5 +196,12 @@ extension RewardedViewController: AppHarbrDelegate {
     // MARK: AppHarbr AppHarbrDelegate
     func didAdBlocked(ad: NSObject?, unitId: String?, adForamt: AdFormat, reasons: [String]) {
         print("AppHarbr : Ad Blocked")
+    }
+}
+
+extension RewardedViewController: AppHarbrAdAnalyzeDelegate {
+    
+    func didAdAnalyzed(ad: NSObject?, adNetwork: AdSdk, unitId: String?, adFormat: AdFormat, result: AdAnalyzedResult) {
+        print("Output from ad network \(adNetwork.rawValue), ad unit id: \(unitId ?? ""), with ad result: \(result.description)")
     }
 }
